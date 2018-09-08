@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZH időpontok</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="functions.js"></script>
+	<meta charset="utf-8">
+</head>	
+<body id="zh_body">
+
+	<div id="zhk">
+	<h2 onclick="timeLeft();"><a href="index.html"><i class="fa fa-arrow-left"></i></a>Zh időpontok:</h2>
+	<ul>
+		<li>
+			<h3 id="adatb_zh" data-date="2018-11-12" onclick="dateShow(this); timeLeft(this);">AdatB</h3>
+			<div id="adatb_zh_ido" class="datum_show hidden">
+			</div>
+		</li>
+		<li>
+			<h3 id="relm_zh" data-date="2018-10-15" onclick="dateShow(this); timeLeft(this);">Relm</h3>
+			<div id="relm_zh_ido" class="datum_show hidden">
+			</div>
+		</li>
+		<li>
+			<h3 id="valszam_zh" data-date="2018-10-29" onclick="dateShow(this); timeLeft(this);">Valszám</h3>
+			<div id="valszam_zh_ido" class="datum_show hidden">
+			</div>
+		</li>
+		<li>
+			<h3 id="komhal_zh" data-date="2018-11-19" onclick="dateShow(this); timeLeft(this);">Komhál</h3>
+			<div id="komhal_zh_ido" class="datum_show hidden">
+			</div>
+		</li>
+		<li>
+			<h3 id="kodtech_zh" data-date="2018-11-08" onclick="dateShow(this); timeLeft(this);">Kódtech</h3>
+			<div id="kodtech_zh_ido" class="datum_show hidden">
+			</div>
+		</li>
+		<li>
+			<h3 id="fiz1_zh" data-date="2018-10-29" onclick="dateShow(this); timeLeft(this);">Fiz1</h3>
+			<div id="fiz1_zh_ido" class="datum_show hidden">
+			</div>
+		</li>
+	</ul>
+</div>
+
+</body>
+</html>

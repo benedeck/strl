@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Órarend</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="functions.js"></script>
+	<meta charset="utf-8">
+</head>	
+<body id="main_body">
+
+<table id="timetable">
+	<thead>
+		<tr id="napok">
+			<td class="ido_oszlop"></td>
+			<td>Hétfő</td>
+			<td>Kedd</td>
+			<td>Szerda</td>
+			<td>Csütörtök</td>
+			<td>Péntek</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr id="nyolctol" class="idosav">
+			<td class="ido_oszlop">08:15</td>
+			<td class="notime"></td>
+			<td class="hasdata notime"><a href="https://www.db.bme.hu/adatbazisok/"><h3>AdatB</h3></a><p>QBF10</p><br>Gyakorlat - Gyakvez Neve<br></td>
+			<td class="hasdata notime"><a href="http://www.szit.bme.hu/~kela/ind1.html"><h3>Valszám</h3></a><p>IB145</p><br>Gyakorlat - Gyakvez Neve<br></td>
+			<td class="hasdata notime"><a href="https://fourier.hvt.bme.hu/"><h3>Relm</h3></a><p>V1501</p><br>Gyakorlat - Gyakvez Neve<br></td>
+			<td class="hasdata notime"><a href="https://fizipedia.bme.hu/index.php/Fizika_1i_-_M%C3%A9rn%C3%B6k_informatikus_alapszak"><h3>Fiz1</h3></a><p>F29</p><br>Előadás - Vígh Máté<br></td>
+		</tr>
+		<tr id="tiztol" class="idosav">
+			<td class="ido_oszlop">10:15</td>
+			<td class="hasdata notime"><a href="https://www.db.bme.hu/adatbazisok/"><h3>AdatB</h3></a><p>Q-I</p><br>Előadás - Gajdos Sándor<br></td>
+			<td class="hasdata notime"><a href="https://www.iit.bme.hu/targyak/BMEVIIIAB00"><h3>Prog3</h3></a><p>L2I</p><br>Labor - Horti Norbert<br></td>
+			<td class="hasdata notime"><a href="https://www.hit.bme.hu/page/BMEVIHIAB01"><h3>KomHál</h3></a><p>Q-I</p><br>Előadás - Dr. Simon Vilmos<br></td>
+			<td class="hasdata notime"><a href="http://www.hit.bme.hu/~ceffer/kodtech/"><h3>Kódtech</h3></a><p>Q-I</p><br>Előadás - Dr. Vajda János<br></td>
+			<td class="hasdata notime"><a href="https://www.iit.bme.hu/oktatas/tanszeki_targyak/BMEVIIIAB01"><h3>Tanköri</h3></a><p>Q-I</p><br>Előadás - Schulcz Róbert<br></td>
+		</tr>
+		<tr id="deltol" class="idosav">
+			<td class="ido_oszlop">12:15</td>
+			<td class="hasdata notime"><a href="https://fourier.hvt.bme.hu/"><h3>Relm</h3></a><p>Q-I</p><br>Elődás - Dr. Nagy Lajos<br></td>
+			<td class="hasdata notime"><a href="http://www.szit.bme.hu/~kela/ind1.html"><h3>Valszám</h3></a><p>Q-I</p><br>Előadás - Csehi Csongor György<br></td>
+			<td class="hasdata notime"><a href="http://www.hit.bme.hu/~ceffer/kodtech/"><h3>Kódtech</h3></a><p>Q-I</p><br>Előadás - Dr. Vajda István<br></td>
+			<td class="notime"></td>
+			<td class="notime"></td>
+		</tr>
+		<tr id="kettotol" class="idosav">
+			<td class="ido_oszlop">14:15</td>
+			<td class="hasdata notime"><a href="https://www.iit.bme.hu/targyak/BMEVIIIAB00"><h3>Prog3</h3></a><p>Q-I</p><br>Előadás - Dr. Goldschmidt Balázs<br></td>
+			<td class="notime"></td>
+			<td class="hasdata notime"><a href="https://www.hit.bme.hu/page/BMEVIHIAB01"><h3>Komhál</h3></a><p>IB141</p><br>Labor - Dr. Simon Vilmos<br></td>
+			<td class="hasdata notime"><a href="https://www.db.bme.hu/adatbazisok/"><h3>AdatB</h3></a><p>NaN</p><br>Labor(L3) - Dr. Gajdos Sándor<br></td>
+			<td class="notime"></td>
+		</tr>
+		<tr id="negytol" class="idosav">
+			<td class="ido_oszlop">17:15</td>
+			<td class="notime"></td>
+			<td class="hasdata notime"><a href="http://iw.tmit.bme.hu/education/subject/vitmak49!hun"><h3>DigitÉ</h3></a><p>IB027</p><br>Előadás - Dr. Székely Iván<br></td>
+			<td class="notime"></td>
+			<td class="notime"></td>
+			<td class="notime"></td>
+		</tr>
+
+	</tbody>
+</table>
+
+<div id="linkek">
+	<a href="todo.html">
+		<div class="todo main_link"><h3>Feladatok</h3></div>
+	</a>
+	<a href="zh.html">
+		<div class="zhk main_link"><h3>ZH-k</h3></div>
+	</a>
+	<a href="https://frame.neptun.bme.hu/hallgatoi/main.aspx"><div class="neptun main_link">
+		<h3>Neptun</h3>
+	</div></a>
+	<a href="https://vik.wiki/Kezd%C5%91lap"><div class="wiki main_link">
+		<h3>VIK WIKI</h3>
+	</div></a>
+	<a href="https://mail.google.com/mail/u/0/?pli=1"><div class="gmail main_link">
+		<h3>Gmail</h3>
+	</div></a>
+	<a href="https://schdesign.slack.com/messages"><div class="slack main_link">
+		<h3>Slack</h3>
+	</div></a>
+	
+</div>
+
+
+
+</body>
+</html>

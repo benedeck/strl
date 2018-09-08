@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do list</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="functions.js"></script>
+	<meta charset="utf-8">
+</head>	
+<body id="todo_body">
+	<div id="todo_nav">
+		<a href="index.html"><i class="fa fa-arrow-left"></i></a>
+		<h1>To Do list</h1>
+	</div>
+
+<div id="wrapper">
+	<div id="esemenyek">
+		<h2>Eventek:</h2>
+		<div class="event" id="01" onclick="eventAccordionToggle(this);">
+			<h3>BME napok <i class="fa fa-arrow-circle-down"></i></h3>
+			<div class="acc_content">
+				Jövőhéten<br>Lebeszélni Guido-val és Sárival<br>lesz AK26 és AWS
+			</div>
+		</div>
+
+		<div class="event" id="02" onclick="eventAccordionToggle(this);">
+			<h3>Nevtúra <i class="fa fa-arrow-circle-down"></i></h3>
+			<div class="acc_content">
+				Pénteken lesz, Hűvösvölgyben<br>Előtte Apucii pörköltet főz
+			</div>
+		</div>
+
+		<div class="event" id="03" onclick="eventAccordionToggle(this);">
+			<h3>Ökörsütés <i class="fa fa-arrow-circle-down"></i></h3>
+			<div class="acc_content">
+				Vasárnap lesz délután. <br>Ne hagyd otthon a jegyed!
+			</div>
+		</div>
+
+		<div class="event" id="04" onclick="eventAccordionToggle(this);"> 
+			<h3>Simonyi felvételi előkészítő <i class="fa fa-arrow-circle-down"></i></h3>
+			<div class="acc_content">
+				Jövőhéten lesz, meg kell még nézni melyik nap.
+			</div>
+		</div>
+
+		<div class="event" id="05" onclick="eventAccordionToggle(this);">
+			<h3>Simonyi felvételi <i class="fa fa-arrow-circle-down"></i></h3>
+			<div class="acc_content">
+				Nem tudom mikor lesz egyenlőre. Emailben le van írva.
+			</div>
+		</div>
+
+		<div class="event" id="06" onclick="eventAccordionToggle(this);">
+			<h3>Qpa <i class="fa fa-arrow-circle-down"></i></h3>
+			<div class="acc_content">
+				Elkupáztuk.
+			</div>
+		</div>
+
+		<div class="event" id="07" onclick="eventAccordionToggle(this);">
+			<h3>Komhál labor <i class="fa fa-arrow-circle-down"></i></h3>	
+			<div class="acc_content">
+				Készülni kell rá a laboranyagból.
+			</div>
+		</div>
+		
+		<div class="event" id="08" onclick="eventAccordionToggle(this);">
+			<h3>AdatB labor <i class="fa fa-arrow-circle-down"></i></h3>		
+			<div class="acc_content">
+				Készülni kell rá a laboranyagból.
+			</div>	
+		</div>
+	</div>
+
+	<div id="todo_div">
+		<h2>Feladatok</h2>
+		<ul>
+			<li>Felvételi tábor</li>
+			<li>AdatB jegyzet</li>
+			<li>Qpa póló</li>
+			<li>Qpa induló</li>
+			<li>SCH Mátrix</li>
+			<li>2. tankörit lebeszélni</li>
+			<li>JukeBox</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
